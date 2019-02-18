@@ -23,7 +23,7 @@ app.listen(8082);
 
 function mkfile() {
     return new Promise((resolve, reject) => {
-        const commands = 'sh ./update.sh';
+        const commands = 'sh ../update.sh';
         exec(commands, (err, out, code) => {
             if (err) {
                 reject(err);
