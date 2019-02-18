@@ -30,7 +30,6 @@ function mkfile() {
             }
             console.log(stdout);
             console.log(stderr);
-
             resolve('success');
         })
     })
