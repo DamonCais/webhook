@@ -1,3 +1,3 @@
 #!/bin/bash
-git pull
-cnmp i
+git pull 
+cnpm i
