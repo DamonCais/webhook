@@ -24,10 +24,13 @@ app.listen(8082);
 function mkfile() {
     return new Promise((resolve, reject) => {
         const commands = 'sh ../update.sh';
-        exec(commands, (err, out, code) => {
+        exec(commands, (err, stdout, stderr) => {
             if (err) {
                 reject(err);
             }
+            console.log(stdout);
+            console.log(stderr);
+
             resolve('success');
         })
     })
