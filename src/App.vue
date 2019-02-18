@@ -1,28 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome bbb to Your Vue.js App"/>
+  <div class="layout-container flex">
+    <base-nav/>
+    <router-view class="box grow p-20"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import baseNav from "@/nav/nav";
 export default {
-  name: "app",
   components: {
-    HelloWorld
+    baseNav: baseNav
   }
 };
 </script>
 
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+<style lang="scss">
+.layout-container {
+  height: 100%;
+  width: 100%;
 }
 </style>
